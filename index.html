@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIFA World Cup</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/tailwind/output.css" />
+  </head>
+  <body class="font-body scroll-smooth ">
+    <!-- Start navbar  -->
+    <div class="bg-gray-50 ">
+      <nav class="px-10 py-2 mx-auto md:flex md:items-center md:justify-between">
+        
+        <div class="flex items-center justify-between">
+          <h1><img src="images/fifa-logo.jpg" alt="" class="h-12" /></h1>
+          <button class="h-6 w-6 md:hidden" id="menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="hidden flex-col items-center md:flex md:flex-row md:space-x-6 " id="links">
+          <a href="#landing" class=" text-xl pb-2 font-bold hover:text-pink-500">Home</a>
+          <a href="#players" class=" text-xl pb-2 font-bold hover:text-pink-500">Players</a>
+          <a href="#Groups" class=" text-xl pb-2 font-bold hover:text-pink-500">Groups</a>
+          <a href="#pricing" class=" text-xl pb-2 font-bold hover:text-pink-500">Pricing</a>
+          <a href="#contact" class=" text-xl pb-2 font-bold hover:text-pink-500">Contact</a>
+          <button class="btn1">Signup</button>
+          <!-- <button class="btn1">Signup</button>  -->
+        </div>
+      </nav>
+    </div>
+    <!-- End navbar  -->
+
+    <!-- Start Landing -->
+    <div class="landing" id="landing">
+    <header class="flex flex-wrap items-center justify-between px-10 xl:px-64 lg:px-32 md:px-2 mx-auto my-16 text-center xl:mb-36 mt-36">
+      <div class="w-full md:w-1/2">
+        <img class="h-64 w-96 rounded-3xl mx-auto mt-0 md:mt-0 " src="images/worldplayers.jpg" alt="" />
+      </div>
+      <div class="w-full md:w-1/2 font-sans font-thin ">
+        <h1 class="text-5xl font-bold main-color pt-7">Countdown to Qatar 2022</h1>
+        <h3 class="text-2xl tracking-wider pb-2">
+          As we count down to the start of the global showpiece in Qatar on 20 November, FIFA+ is showcasing 100 of the greatest moments in FIFA World Cup history.
+        </h3>
+        <button class="btn1"><a target="_blank" href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022/countdown-to-qatar-2022">Read More</a></button>
+      </div>
+    </header>
+    </div>
+    <!-- End Landing  -->
+
+    <!-- Start players -->
+    <div class="towatch" id="players">
+    <h1 class="text-4xl font-bold main-color pb-3 pt-3 text-center title mx-auto rounded-full bg-indigo-900 text-white">Players to watch</h1>
+
+    <div class="services flex flex-wrap items-center font-bold justify-between mb-10 mt-10 lg:px-32 md:px-42 px-auto text-gray-600 ">
+      
+      <div class="mx-auto md:w-1/4  mt-8 md:mt-0 flex flex-col items-center space-y-3 text-center">
+       <a href="https://en.wikipedia.org/wiki/Mohamed_Salah" target="_blank"><img src="images/salah.jpg" alt="" class="players" /></a> 
+        <h2 class="text-xl lg:pb-7">Mo Salah</h2>
+      </div>
+      <div class="mx-auto md:w-1/4 mt-8 md:mt-0 flex flex-col items-center space-y-3 text-center">
+        <a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo" target="_blank"><img src="images/ronaldo.jpg" alt="" class="players"/></a> 
+        <h2 class="text-xl lg:pb-7">C.Ronaldo</h2>
+      </div>
+      <div class="mx-auto md:w-1/4 mt-8 md:mt-0 flex flex-col items-center space-y-3 text-center">
+        <a href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank"> <img src="images/messi.jpg" alt="" class="players"/></a> 
+        <h2 class="text-xl lg:pb-7">L.Messi</h2>
+      </div>
+      <div class="mx-auto md:w-1/4 mt-8 md:mt-0 flex flex-col items-center space-y-3 text-center">
+        <a href="https://en.wikipedia.org/wiki/Karim_Benzema" target="_blank">  <img src="images/benzema.jpg" alt="" class="players"/></a> 
+        <h2 class="text-xl lg:pb-7">Benzema</h2>
+      </div>
+      <div class="mx-auto md:w-1/4 mt-8 md:mt-0 flex flex-col items-center space-y-3 text-center">
+        <a href="https://en.wikipedia.org/wiki/Eden_Hazard" target="_blank"> <img src="images/hazard.jpg" alt="" class="players"/></a> 
+        <h2 class="text-xl lg:pb-7">Hazard</h2>
+      </div> 
+      <div class="mx-auto md:w-1/4 mt-8 md:mt-0 flex flex-col items-center space-y-3 text-center">
+        <a href="https://en.wikipedia.org/wiki/Sergio_Ramos" target="_blank"><img src="images/ramos.jpg" alt="" class="players"/></a> 
+        <h2 class="text-xl lg:pb-7">S.Ramos</h2>
+      </div>
+      <div class="mx-auto md:w-1/4  mt-8 md:mt-0 flex flex-col items-center space-y-3 text-center">
+        <a href="https://en.wikipedia.org/wiki/Luka_Modri%C4%87" target="_blank"><img src="images/modric4.jpg" alt="" class="players" /></a> 
+        <h2 class="text-xl lg:pb-7">Modrić</h2>
+      </div>
+      <div class="mx-auto md:w-1/4 mt-8 md:mt-0 flex flex-col items-center space-y-3 text-center">
+        <a href=https://en.wikipedia.org/wiki/Neymar" target="_blank">  <img src="images/neymar.jpg" alt="" class="players"/></a> 
+        <h2 class="text-xl lg:pb-7">Neymar</h2>
+      </div>
+
+    </div>
+    </div>
+    <!-- Start players -->
+
+
+    <!-- Start groups -->
+    <div class="Groups" id="Groups">
+      <div class="text-center">
+    <h1 class="text-4xl font-bold main-color pb-3 pt-3 text-center title mx-auto rounded-full bg-indigo-900 text-white">- Groups - </h1>
+        <p class="text-lg font-bold text-indigo-900">fifa world cup group stage</p>
+      </div>
+
+      <div class="grid grid-cols-1 xl:px-8  md:px-0 px-10 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1   gap-3 container  mx-auto my-10">
+
+        <!-- group A  -->
+        <div class="bg-indigo-900 rounded-3xl w-70 mt-10 shadow-md hover:shadow-2xl p-5 text-center items-start main-box mx-auto">
+          <div class="content">
+          <h1 class="text-3xl font-bold pb-6 text-white">Group A</h1>
+          <ul class="font-sm font-mono space-y-4">
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">A1</div>
+              <div mr-3>
+                <img src="images/country/QAT.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-9 font-black text-xl  pr-4">Qatar</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">A2</div>
+              <div mr-3>
+                <img src="images/country/ECU.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-4">Ecuador</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">A3</div>
+              <div mr-3>
+                <img src="images/country/SEN.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-4">Senegal</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">A4</div>
+              <div mr-3>
+                <img src="images/country/NED.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-1 font-black text-xl pr-0">Netherlands</div>
+            </li>
+           
+          </ul>
+        </div>
+        </div>
+
+        <!-- end group A  -->
+
+        <!-- group B  -->
+        <div class="bg-indigo-900 rounded-3xl w-70 mt-10 shadow-md hover:shadow-2xl p-5 text-center items-start main-box mx-auto">
+          <div class="content">
+          <h1 class="text-3xl font-bold pb-6 text-white">Group B</h1>
+          <ul class="font-sm font-mono space-y-4">
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">B1</div>
+              <div mr-3>
+                <img src="images/country/ENG.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl  pr8">England</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">A2</div>
+              <div mr-3>
+                <img src="images/country/IRN.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-8">Iran</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">A3</div>
+              <div mr-3>
+                <img src="images/country/EGP.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-8">Egypt</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">B4</div>
+              <div mr-3>
+                <img src="images/country/WAL.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-8">Wales</div>
+            </li>
+            
+          </ul>
+        </div>
+        </div>
+        <!-- end group B  --> 
+
+        <!-- group C  -->
+        <div class="bg-indigo-900 rounded-3xl w-70 mt-10 shadow-md hover:shadow-2xl p-5 text-center items-start main-box mx-auto">
+          <div class="content">
+          <h1 class="text-3xl font-bold pb-6 text-white">Group C</h1>
+          <ul class="font-sm font-mono space-y-4">
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">C1</div>
+              <div mr-3>
+                <img src="images/country/ARG.jpg" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-2 font-black text-xl pr-3">Argentina</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">C2</div>
+              <div mr-3>
+                <img src="images/country/KSA.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-6">KSA</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">C3</div>
+              <div mr-3>
+                <img src="images/country/MEX.jpg" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-6">Mexico</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">C4</div>
+              <div mr-3>
+                <img src="images/country/POL.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-6">Poland</div>
+            </li>
+           
+          </ul>
+        </div>
+        </div>
+        <!-- end group C  --> 
+        
+        <!-- group D -->
+        <div class="bg-indigo-900 rounded-3xl w-70 mt-10 shadow-md hover:shadow-2xl p-5 text-center items-start main-box mx-auto">
+          <div class="content">
+          <h1 class="text-3xl font-bold pb-6 text-white">Group D</h1>
+          <ul class="font-sm font-mono space-y-4">
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">D1</div>
+              <div mr-3>
+                <img src="images/country/FRA.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-4 font-black text-xl pr-8">France</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">D2</div>
+              <div mr-3>
+                <img src="images/country/DEN.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-3 font-black text-xl pr-8">Denmark</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">D3</div>
+              <div mr-3>
+                <img src="images/country/AUS.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-1 font-black text-xl pr-4">Australia</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">D4</div>
+              <div mr-3>
+                <img src="images/country/TUN.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-3 font-black text-xl pr-8">Tunisia</div>
+            </li>
+           
+          </ul>
+        </div>
+        </div>
+        <!-- end group D  -->
+
+        <!-- group E -->
+          <div class="bg-indigo-900 rounded-3xl w-70 mt-10 shadow-md hover:shadow-2xl p-5 text-center items-start main-box mx-auto">
+          <div class="content">
+          <h1 class="text-3xl font-bold pb-6 text-white">Group E</h1>
+          <ul class="font-sm font-mono space-y-4">
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">E1</div>
+              <div mr-3>
+                <img src="images/country/ESP.jpg" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-4 font-black text-xl pr-8">Spain</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">E2</div>
+              <div mr-3>
+                <img src="images/country/GER.jpg" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-4 font-black text-xl pr-8">Germany</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">E3</div>
+              <div mr-3>
+                <img src="images/country/JPN.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-4 font-black text-xl pr-8">Japan</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">E4</div>
+              <div mr-3>
+                <img src="images/country/CRC.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-2 font-black text-xl pr-8">CostRica</div>
+            </li>
+            
+          </ul>
+        </div>
+        </div>
+        <!-- end group E  -->
+
+        <!-- group F -->
+        <div class="bg-indigo-900 rounded-3xl w-70 mt-10 shadow-md hover:shadow-2xl p-5 text-center items-start main-box mx-auto">
+          <div class="content">
+          <h1 class="text-3xl font-bold pb-6 text-white">Group F</h1>
+          <ul class="font-sm font-mono space-y-4">
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">F1</div>
+              <div mr-3>
+                <img src="images/country/BEL.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-8">Belgium</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">F2</div>
+              <div mr-3>
+                <img src="images/country/CAN.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl">Canada</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">F3</div>
+              <div mr-3>
+                <img src="images/country/MAR.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl">Morocco</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">F4</div>
+              <div mr-3>
+                <img src="images/country/CRO.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl">Croatia</div>
+            </li>
+           
+          </ul>
+        </div>
+        </div>
+        <!-- end group F  -->
+
+        <!-- group G -->
+          <div class="bg-indigo-900 rounded-3xl w-70 mt-10 shadow-md hover:shadow-2xl p-5 text-center items-start main-box mx-auto">
+          <div class="content">
+          <h1 class="text-3xl font-bold pb-6 text-white">Group G</h1>
+          <ul class="font-sm font-mono space-y-4">
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">G1</div>
+              <div mr-3>
+                <img src="images/country/BRA.jpg" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-4">Brazil</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">G2</div>
+              <div mr-3>
+                <img src="images/country/SRB.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-4">Serbia</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">G3</div>
+              <div mr-3>
+                <img src="images/country/SUI.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-1 font-black text-xl pr-0">Switzerland</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">G4</div>
+              <div mr-3>
+                <img src="images/country/CMR.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-3 font-black text-xl pr-4">Cameroon</div>
+            </li>
+            
+          </ul>
+        </div>
+        </div>
+        <!-- end group G  -->
+
+        <!-- group H -->
+        <div class="bg-indigo-900 rounded-3xl w-70 mt-10 shadow-md hover:shadow-2xl p-5 text-center items-start main-box mx-auto">
+          <div class="content">
+          <h1 class="text-3xl font-bold pb-6 text-white">Group H</h1>
+          <ul class="font-sm font-mono space-y-4">
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">H1</div>
+              <div mr-3>
+                <img src="images/country/POR.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-4">Portugal</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">H2</div>
+              <div mr-3>
+                <img src="images/country/GHA.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-4">Ghana</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">H3</div>
+              <div mr-3>
+                <img src="images/country/URU.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-4">Uruguay</div>
+            </li>
+            <li class="flex items-start bg-white rounded-xl h-11 pt-2 pl-2 w-full">
+              <div class="font-bold text-xl">H4</div>
+              <div mr-3>
+                <img src="images/country/KOR.png" alt="" class="h-6 w-12 pl-3">
+              </div>
+              <div class="pl-6 font-black text-xl pr-4">Korea</div>
+            </li>
+           
+          </ul>
+        </div>
+        </div>
+        <!-- end group H  -->
+
+
+
+      </div>
+    </div>  
+    <!-- End groups -->
+
+
+
+    <!-- Start Pricing -->
+    <div class="pricing pt-12" id="pricing">
+      <div class="text-center">
+    <h1 class="text-4xl font-bold main-color pb-3 pt-3 text-center title mx-auto rounded-full bg-indigo-900 text-white mb-1 mt-5">- Pricing -</h1>
+        <p class="text-lg font-bold text-indigo-900">
+          Offer multiple packages and trips- Choose the best for you now
+        </p>
+
+      </div>
+
+      <div class="grid grid-cols-1 xl:px-32 md:px-0 px-10 lg:grid-cols-3   gap-3 container  mx-auto my-10">
+
+        <div class="bg-white rounded-3xl w-70 mt-10 shadow-md hover:shadow-2xl p-5 text-center main-box2 mx-auto ">
+          <h1 class="text-5xl font-bold">$2500</h1>
+          <h2 class="text-blue-400 text-lg font-bold">Basic</h2>
+          <p class="my-4">Starter plan with all basics included</p>
+          <ul class="font-bold font-mono space-y-4">
+            <li class="flex items-center">
+              <div mr-3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current text-blue-500 h-8"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>Flight from Cairo to Qatar</div>
+            </li>
+
+            <li class="flex items-center">
+              <div mr-3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current text-blue-500 h-8"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>Flight back to Cairo</div>
+            </li>
+            <li class="flex items-center">
+              <div mr-3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  class="text-blue-500 h-8"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <div>Four star hotel room</div>
+            </li>
+            <li class="flex items-center">
+              <div mr-3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  class="text-blue-500 h-8"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <div>Group stage matches tickets</div>
+            </li>
+            <div class="btn3">
+              <button>View Deal</button>
+            </div>
+          </ul>
+        </div>
+
+        <div class="middle-box bg-white rounded-3xl w-70 hover:shadow-2xl border-8 border-blue-400 border-dashed mt-10 shadow-md p-5 text-center mx-auto">
+          <h1 class="text-5xl font-bold">$4999</h1>
+          <h2 class="text-blue-400 text-lg font-bold">premium</h2>
+          <p class="my-4">Starter plan with all basics included</p>
+          <ul class="font-bold font-mono space-y-4">
+            <li class="flex items-center">
+              <div mr-3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current text-blue-500 h-8"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>Flight from Cairo to Qatar</div>
+            </li>
+
+            <li class="flex items-center">
+              <div mr-3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current text-blue-500 h-8"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>Flight back to Cairo</div>
+            </li>
+
+            <li class="flex items-center">
+              <div mr-3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current text-blue-500 h-8"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>Five star hotel room</div>
+            </li>
+            <li class="flex items-center">
+              <div mr-3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current text-blue-500 h-8"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>All World Cup matches</div>
+            </li>
+            <li class="flex items-center">
+              <div mr-3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  class="text-blue-500 h-8"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <div>Tourist attractions visits</div>
+            </li>
+            <div class="btn3">
+              <button>View Deal</button>
+            </div>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-3xl w-70 mt-10 shadow-md hover:shadow-2xl p-5 text-center main-box2 mx-auto">
+          <h1 class="text-5xl font-bold">$3500</h1>
+          <h2 class="text-blue-400  text-lg font-bold">Gold</h2>
+          <p class="my-4">Starter plan with all basics included</p>
+          <ul class="font-bold font-mono space-y-4">
+            <li class="flex items-center">
+              <div mr-3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current text-blue-500 h-8"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>Flight from Cairo to Qatar</div>
+            </li>
+
+            <li class="flex items-center">
+              <div mr-3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current text-blue-500 h-8"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>Flight back to Cairo</div>
+            </li>
+
+            <li class="flex items-center">
+              <div mr-3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current text-blue-500 h-8"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>Five star hotel room</div>
+            </li>
+            <li class="flex items-center">
+              <div mr-3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current text-blue-500 h-8"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>Up to the quarter-finals</div>
+            </li>
+            <div class="btn3">
+              <button>View Deal</button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Pricing -->
+
+    <!-- Start footer -->
+    <div class="footer px-10 xl:px-96 md:px-24 py-4 px-auto" id="contact">
+      <div class="flex flex-wrap justify-between text-center">
+
+        <div class="w-full md:w-1/3 my-4 text-center"> 
+          <h1 class="text-4xl text-white">Address</h1>
+
+          <p class="font-mono font-thin text-md mt-3 text-white">
+            <i class="fa-solid fa-location-dot h-4"></i>
+            Egypt-portsaid
+          </p>
+        </div>
+
+
+        <div  class="w-full md:w-1/3 my-4 items-center">
+          <h1 class="text-4xl text-white">Social</h1>
+          <div class="icons flex gap-8 my-3 items-center justify-center">
+            <a href="https://www.facebook.com/yassersalemm14" target="_blank"
+              ><i
+                class="fa-brands fa-facebook text-pink-400 h-7 hover:text-white"
+              ></i
+            >
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yasser-salem-118b7b214/"
+              target="_blank"
+              ><i
+                class="fa-brands fa-linkedin text-pink-400 h-7 hover:text-white"
+              ></i
+            >
+            </a>
+            <a href="https://twitter.com/Yasser_salem74 " target="_blank"
+              ><i
+                class="fa-brands fa-twitter text-pink-400 h-7 hover:text-white"
+              ></i
+            >
+            </a>
+            <a href="mailto:yassersalem9099@gmail.com" target="_blank"
+            ><i
+              class="fa-solid fa-envelope text-pink-400 h-7 hover:text-white"
+            >
+          </i>
+          </a>
+          <a href="tel:01228309083" target="_blank"
+          ><i
+            class="fa-solid fa-phone text-pink-400 h-7 hover:text-white"
+          >
+        </i>
+        </a>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div>
+        <p class="mt-4 text-center font-mono font-thin text-lg text-white">
+          2022 <span class="text-yellow-400"> Yasser Salem </span> All Rights
+          Reserved
+        </p>
+      </div>
+    </div>
+    <!-- End footer -->
+
+    <!-- import js files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

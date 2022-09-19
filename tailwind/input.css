@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Open+Sans:wght@700&family=Roboto:wght@100;300;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn1{
+    @apply bg-indigo-900 hover:bg-pink-500 text-white px-8 py-2 rounded-full cursor-pointer ;
+}
+.btn2{
+    @apply bg-pink-500 hover:bg-indigo-900 px-10 text-white py-2 rounded-full cursor-pointer font-normal ;
+}
+
+.btn3{
+    @apply bg-indigo-900 hover:bg-pink-500 text-white px-8 py-2 rounded-full cursor-pointer  ;
+}
+
+.players{
+    @apply h-52 w-60 contrast-50 hover:contrast-100 cursor-pointer border-2 border-blue-200  ;
+}

@@ -1,0 +1,42 @@
+
+
+.middle-box{
+    height: 560px;
+}
+
+@media only screen and (max-width: 417px)  {
+    .middle-box{
+        height: 630px;
+    }
+}
+
+.main-box{
+    height: 370px;   
+}
+
+
+
+
+.main-box2{
+    height: 300;
+}
+
+.main-color{
+    color: rgb(12, 12, 93);
+
+}
+
+.footer{
+    background-color: rgb(12, 12, 93);
+}
+
+.title{
+    // background-color: red;
+    width: 300px;
+    height:75px;
+}
+
+
+.flag{
+    width: 30px;
+}
